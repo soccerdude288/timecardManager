@@ -1,0 +1,10 @@
+/var/www/html/timecardManager/bin/Debug/netcoreapp2.0/timecardManager.deps.json
+/var/www/html/timecardManager/bin/Debug/netcoreapp2.0/timecardManager.runtimeconfig.json
+/var/www/html/timecardManager/bin/Debug/netcoreapp2.0/timecardManager.runtimeconfig.dev.json
+/var/www/html/timecardManager/bin/Debug/netcoreapp2.0/timecardManager.dll
+/var/www/html/timecardManager/bin/Debug/netcoreapp2.0/timecardManager.pdb
+/var/www/html/timecardManager/obj/Debug/netcoreapp2.0/timecardManager.csproj.CoreCompileInputs.cache
+/var/www/html/timecardManager/obj/Debug/netcoreapp2.0/timecardManager.AssemblyInfoInputs.cache
+/var/www/html/timecardManager/obj/Debug/netcoreapp2.0/timecardManager.AssemblyInfo.cs
+/var/www/html/timecardManager/obj/Debug/netcoreapp2.0/timecardManager.dll
+/var/www/html/timecardManager/obj/Debug/netcoreapp2.0/timecardManager.pdb
