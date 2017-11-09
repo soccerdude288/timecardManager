@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{5EB0D281-0EC6-4187-B2EE-730D161FEBB4}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/_Layout.cshtml">
+    <Files>
+      <File FileName="Pages/_Layout.cshtml" Line="35" Column="48" />
+      <File FileName="Pages/dashboard.cshtml.cs" Line="1" Column="1" />
+      <File FileName="Pages/dashboard.cshtml" Line="12" Column="34" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.timecardManager PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
