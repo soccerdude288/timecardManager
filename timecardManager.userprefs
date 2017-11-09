@@ -1,9 +1,10 @@
 ﻿<Properties StartupConfiguration="{5EB0D281-0EC6-4187-B2EE-730D161FEBB4}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/_Layout.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/dashboard.cshtml">
     <Files>
-      <File FileName="Pages/_Layout.cshtml" Line="35" Column="48" />
+      <File FileName="Pages/_Layout.cshtml" Line="33" Column="50" />
       <File FileName="Pages/dashboard.cshtml.cs" Line="1" Column="1" />
-      <File FileName="Pages/dashboard.cshtml" Line="12" Column="34" />
+      <File FileName="Pages/dashboard.cshtml" Line="9" Column="22" />
+      <File FileName="wwwroot/css/site.css" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
