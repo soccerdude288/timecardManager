@@ -8,3 +8,14 @@
 /var/www/html/timecardManager/obj/Debug/netcoreapp2.0/timecardManager.AssemblyInfo.cs
 /var/www/html/timecardManager/obj/Debug/netcoreapp2.0/timecardManager.dll
 /var/www/html/timecardManager/obj/Debug/netcoreapp2.0/timecardManager.pdb
+/Users/taylor/Desktop/timecardManager/bin/Debug/netcoreapp2.0/timecardManager.deps.json
+/Users/taylor/Desktop/timecardManager/bin/Debug/netcoreapp2.0/timecardManager.runtimeconfig.json
+/Users/taylor/Desktop/timecardManager/bin/Debug/netcoreapp2.0/timecardManager.runtimeconfig.dev.json
+/Users/taylor/Desktop/timecardManager/obj/Debug/netcoreapp2.0/timecardManager.csprojResolveAssemblyReference.cache
+/Users/taylor/Desktop/timecardManager/obj/Debug/netcoreapp2.0/timecardManager.csproj.CoreCompileInputs.cache
+/Users/taylor/Desktop/timecardManager/obj/Debug/netcoreapp2.0/timecardManager.AssemblyInfo.cs
+/Users/taylor/Desktop/timecardManager/obj/Debug/netcoreapp2.0/timecardManager.dll
+/Users/taylor/Desktop/timecardManager/obj/Debug/netcoreapp2.0/timecardManager.pdb
+/Users/taylor/Desktop/timecardManager/bin/Debug/netcoreapp2.0/timecardManager.dll
+/Users/taylor/Desktop/timecardManager/bin/Debug/netcoreapp2.0/timecardManager.pdb
+/Users/taylor/Desktop/timecardManager/obj/Debug/netcoreapp2.0/timecardManager.AssemblyInfoInputs.cache

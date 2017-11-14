@@ -1,10 +1,12 @@
 ﻿<Properties StartupConfiguration="{5EB0D281-0EC6-4187-B2EE-730D161FEBB4}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/dashboard.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="wwwroot/css/site.min.css">
     <Files>
       <File FileName="Pages/_Layout.cshtml" Line="33" Column="50" />
       <File FileName="Pages/dashboard.cshtml.cs" Line="1" Column="1" />
-      <File FileName="Pages/dashboard.cshtml" Line="9" Column="22" />
-      <File FileName="wwwroot/css/site.css" Line="1" Column="1" />
+      <File FileName="Pages/dashboard.cshtml" Line="29" Column="30" />
+      <File FileName="wwwroot/css/site.css" Line="32" Column="24" />
+      <File FileName="bundleconfig.json" Line="18" Column="23" />
+      <File FileName="wwwroot/css/site.min.css" Line="1" Column="245" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
