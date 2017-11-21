@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<style>
+			.navbar {
+				overflow: hidden;
+				background-color: #333;
+				font-family: Arial;
+			}
+
+			.navbar a {
+				float: left;
+				font-size: 16px;
+				color: white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+			
+			
+
+			.dropdownStudent {
+				float: left;
+				overflow: hidden;
+			}
+
+			.dropdownStudent .dropbtnStudent {
+				cursor: pointer;
+				font-size: 16px;    
+				border: none;
+				outline: none;
+				color: white;
+				padding: 14px 16px;
+				background-color: inherit;
+			}
+				
+
+			.navbar a:hover, .dropdownStudent:hover .dropbtnStudent {
+				background-color: red;
+			}
+
+			.dropdownStudent-content {
+				display: none;
+				position: absolute;
+				background-color: #f9f9f9;
+				min-width: 160px;
+				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				z-index: 1;
+			}
+
+			.dropdownStudent-content a {
+				float: none;
+				color: black;
+				padding: 12px 16px;
+				text-decoration: none;
+				display: block;
+				text-align: left;
+			}
+
+			.dropdownStudent-content a:hover {
+				background-color: #ddd;
+			}
+			
+					.dropdownClass {
+						float: left;
+						overflow: hidden;
+					}
+
+					.dropdownClass .dropbtnClass {
+						cursor: pointer;
+						font-size: 16px;    
+						border: none;
+						outline: none;
+						color: white;
+						padding: 14px 16px;
+						background-color: inherit;
+					}
+						
+
+					.navbar a:hover, .dropdownClass:hover .dropbtnClass {
+						background-color: red;
+					}
+
+					.dropdownClass-content {
+						display: none;
+						position: absolute;
+						background-color: #f9f9f9;
+						min-width: 160px;
+						box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+						z-index: 1;
+					}
+
+					.dropdownClass-content a {
+						float: none;
+						color: black;
+						padding: 12px 16px;
+						text-decoration: none;
+						display: block;
+						text-align: left;
+					}
+
+					.dropdownClass-content a:hover {
+						background-color: #ddd;
+					}
+					
+							.dropdownMenu {
+								float: right;
+								overflow: hidden;
+							}
+
+							.dropdownMenu .dropbtnMenu {
+								cursor: pointer;
+								font-size: 16px;    
+								border: none;
+								outline: none;
+								color: white;
+								padding: 14px 16px;
+								background-color: inherit;
+							}
+								
+
+							.navbar a:hover, .dropdownMenu:hover .dropbtnMenu {
+								background-color: red;
+							}
+
+							.dropdownMenu-content {
+								display: none;
+								position: absolute;
+								background-color: #f9f9f9;
+								min-width: 250px;
+								box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+								z-index: 1;
+							}
+
+							.dropdownMenu-content a {
+								float: none;
+								color: black;
+								padding: 12px 16px;
+								text-decoration: none;
+								display: block;
+								text-align: left;
+							}
+
+							.dropdownMenu-content a:hover {
+								background-color: #ddd;
+							}
+											
+											.groupbar {
+												overflow: hidden;
+												background-color: #333;
+												font-family: Arial;
+											}
+
+											.groupbar a {
+												float: left;
+												font-size: 16px;
+												color: white;
+												text-align: center;
+												padding: 14px 16px;
+												text-decoration: none;
+											}
+											
+											.dropdownGroup {
+												float: left;
+												overflow: hidden;
+											}
+
+											.dropdownGroup .dropbtnGroup {
+												cursor: pointer;
+												font-size: 16px;    
+												border: none;
+												outline: none;
+												color: white;
+												padding: 14px 16px;
+												background-color: inherit;
+											}
+											
+											.groupbar a:hover, .dropdownGroup:hover .dropbtnGroup {
+												background-color: red;
+											}
+
+											.dropdownGroup-content {
+												display: none;
+												position: absolute;
+												background-color: #f9f9f9;
+												min-width: 250px;
+												box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+												z-index: 1;
+											}
+
+											.dropdownGroup-content a {
+												float: none;
+												color: black;
+												padding: 12px 16px;
+												text-decoration: none;
+												display: block;
+												text-align: left;
+											}
+
+											.dropdownGroup-content a:hover {
+												background-color: #ddd;
+											}
+
+			.show {
+				display: block;
+			}
+			
+							table {
+								font-family: arial, sans-serif;
+								border-collapse: collapse;
+								width: 100%;
+							}
+
+							td, th {
+								border: 1px solid #dddddd;
+								text-align: left;
+								padding: 8px;
+							}
+
+							tr:nth-child(even) {
+								background-color: #dddddd;
+							}
+			</style>
+			
+			<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+			<script type="text/javascript">
+				google.charts.load("current", {packages:["corechart"]});
+				
+				google.charts.setOnLoadCallback(drawGroupPie);
+				function drawGroupPie() {
+					var data = google.visualization.arrayToDataTable([
+					  ['Name', 'Total Hours'],
+					  ['Curtis Hart',     15],
+					  ['Garrett Barker',  15],
+					  ['Taylor Earl',     15],
+					]);
+
+					var options = {
+					  title: 'Group Total Hours Worked Per Person',
+					  is3D: true,
+					};
+
+					var chart = new google.visualization.PieChart(document.getElementById('groupWork_3D'));
+					chart.draw(data, options);
+				}
+				
+				
+				google.charts.setOnLoadCallback(drawBarChart);
+				function drawBarChart() {
+					var data = google.visualization.arrayToDataTable([
+						["Element", "Hours Worked", { role: "style" } ],
+						["High", 40, "green"],
+						["Average", 35, "blue"],
+						["Low", 20, "red"],
+						["You", 30, "color: purple"]
+					]);
+
+					var view = new google.visualization.DataView(data);
+					view.setColumns([0, 1,
+									   { calc: "stringify",
+										 sourceColumn: 1,
+										 type: "string",
+										 role: "annotation" },
+									   2]);
+
+					var options = {
+						title: "Class Hours Worked Comparison",
+						width: 600,
+						height: 400,
+						bar: {groupWidth: "95%"},
+						legend: { position: "none" },
+					};
+					
+					var chart = new google.visualization.BarChart(document.getElementById("barchart_class"));
+					chart.draw(view, options);
+				}
+				
+				
+				google.charts.setOnLoadCallback(usersInGroupPie);
+				function usersInGroupPie() {
+					var data = google.visualization.arrayToDataTable([
+					  ['Name', 'Total Hours'],
+					  ['Curtis Hart',     15],
+					  ['Garrett Barker',  15],
+					  ['Taylor Earl',     15],
+					]);
+
+					var options = {
+					  title: 'Group Total Hours Worked Per Person',
+					  is3D: true,
+					};
+
+					var chart = new google.visualization.PieChart(document.getElementById('differentGroupWork_3D'));
+					chart.draw(data, options);
+				}
+				
+				google.charts.setOnLoadCallback(drawEachGroupPie);
+				function drawEachGroupPie() {
+					var data = google.visualization.arrayToDataTable([
+					  ['Group Name', 'Total Hours'],
+					  ['Group 1',     100],
+					  ['Group 2',     100],
+					  ['Group 3',     90],
+					]);
+
+					var options = {
+					  title: 'Each Groups Total Hours Worked',
+					  is3D: true,
+					};
+
+					var chart = new google.visualization.PieChart(document.getElementById('eachGroupHours_3D'));
+					chart.draw(data, options);
+				}
+			</script>
+			
+			
+		</head>
+<body>
+
+		<div class="navbar">
+			<a href="#home">Home</a>
+			
+			<div class="dropdownClass">
+				<button class="dropbtnClass" onclick="dropdownClasses()">Classes
+					<i class="fa fa-caret-down"></i>
+				</button>
+		
+				<div class="dropdownClass-content" id="myDropdownClass">
+					<a href="#">Link 1</a>
+					<a href="#">Link 2</a>
+					<a href="#">Link 3</a>
+				</div>
+			</div> 
+		  
+			<div class="dropdownStudent">
+				<button class="dropbtnStudent" onclick="dropdownStud()">Students
+					<i class="fa fa-caret-down"></i>
+				</button>
+		
+				<div class="dropdownStudent-content" id="myDropdownStudent">
+					<a href="#">Link 1</a>
+					<a href="#">Link 2</a>
+					<a href="#">Link 3</a>
+				</div>
+			</div> 
+			
+			
+			<div class="dropdownMenu">
+				<button class="dropbtnMenu" onclick="dropdownMenus()">Menu
+					<i class="fa fa-caret-down"></i>
+				</button>
+		
+				<div class="dropdownMenu-content" id="myDropdownMenu">
+					<a href="#">Profile</a>
+					<a href="#">Add to Group</a>
+					<a href="#">Create Group</a>
+				</div>
+			</div> 
+		</div>
+		
+		
+		<form>
+			<fieldset>
+				<label>Group Name:</label>
+				<label id="groupName"></label><br>
+				
+				<label>Current Time:</label>
+				<label id="date"></label>
+				<label id="datetime"></label><br>
+				
+				<label>Total Running Time:</label>
+				<label id="runningTime"></label><br>
+
+				<input id="startTime" type="submit" value="Start">
+				<input id="stopTime" type="submit" value="Stop">
+			 </fieldset>
+		</form>
+		
+		<div style="width: 1500px;">
+			<div id="barchart_class" style="float: left; width: 700px; height: 400px"></div>
+			<div id="groupWork_3D" style="float: left; width: 700px; height: 400px;"></div> 	
+			<br style="clear: left;" />
+		</div>
+		
+		
+		<table>
+			<tr>
+				<th>Start Time</th>
+				<th>Stop Time</th>
+				<th>Total Time</th>
+				<th>Group Name</th>
+				<th>Comments</th>
+				<th>Modified Date</th>
+				<th></th>
+			</tr>
+			<tr>
+				<td>11/15/2017 5:00pm</td>
+				<td>11/15/2017 8:00pm</td>
+				<td>3.00</td>
+				<td>Group 1</td>
+				<td>Worked on Nav Bar</td>
+				<td>11/15/2017 8:00pm</td>
+				<td>
+					<a href="http://google.com">
+						<div style="height:100%;width:100%">
+						  Edit
+						</div>
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<td>11/16/2017 5:00pm</td>
+				<td>11/16/2017 8:00pm</td>
+				<td>3.00</td>
+				<td>Group 3</td>
+				<td>Worked on Database</td>
+				<td>11/15/2017 8:00pm</td>
+				<td>
+					<a href="http://google.com">
+						<div style="height:100%;width:100%">
+						  Edit
+						</div>
+					</a>
+				</td>
+			</tr>
+		</table>
+		
+		<div>
+			<div class="dropdownGroup">
+				<button class="dropbtnGroup" onclick="dropdownGroups()">Menu
+					<i class="fa fa-caret-down"></i>
+				</button>
+		
+				<div class="dropdownGroup-content" id="myDropdownGroup">
+					<a href="#">Group 1</a>
+					<a href="#">Group 2</a>
+					<a href="#">Group 3</a>
+				</div>
+			</div> 
+		</div>
+		
+		<div style="width: 1500px;">
+			<div id="differentGroupWork_3D" style="float: left; width: 700px; height: 400px;"></div> 
+			<div id="eachGroupHours_3D" style="float: left; width: 700px; height: 400px"></div>
+			<br style="clear: left;" />
+		</div>
+		
+
+		 
+
+
+		<script>
+		
+			// Navigation Bar Dropdown Student
+			function dropdownStud() {
+				document.getElementById("myDropdownStudent").classList.toggle("show");
+			}
+
+			// Student Dropdown Onclick
+			window.onclick = function(e) {
+			  if (!e.target.matches('.dropbtnStudent')) {
+				var dropdownStudents = document.getElementById("myDropdownStudent");
+				  if (dropdownStudents.classList.contains('show')) {
+					dropdownStudents.classList.remove('show');
+				  }
+			  }
+			}
+			
+			// Navigation Bar Dropdown Classes
+			function dropdownClasses() {
+				document.getElementById("myDropdownClass").classList.toggle("show");
+			}
+
+			// Classes Dropdown Onclick
+			window.onclick = function(e) {
+			  if (!e.target.matches('.dropbtnClass')) {
+				var dropdownclass = document.getElementById("myDropdownClass");
+				  if (dropdownclass.classList.contains('show')) {
+					dropdownclass.classList.remove('show');
+				  }
+			  }
+			}
+			
+			// Navigation Bar Dropdown Menu
+			function dropdownMenus() {
+				document.getElementById("myDropdownMenu").classList.toggle("show");
+			}
+
+			// Menu Dropdown Onclick
+			window.onclick = function(e) {
+			  if (!e.target.matches('.dropbtnMenu')) {
+				var dropdownmenu = document.getElementById("myDropdownMenu");
+				  if (dropdownmenu.classList.contains('show')) {
+					dropdownmenu.classList.remove('show');
+				  }
+			  }
+			}
+			
+			// Current Time Function
+			var dt = new Date();
+			document.getElementById("date").innerHTML = dt.toLocaleDateString();
+			document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+			
+			
+			// Group Dropdown
+			function dropdownGroups() {
+				document.getElementById("myDropdownGroup").classList.toggle("show");
+			}
+
+			// Group Dropdown Onclick
+			window.onclick = function(e) {
+			  if (!e.target.matches('.dropbtnGroup')) {
+				var dropdowngroup = document.getElementById("myDropdownGroup");
+				  if (dropdowngroup.classList.contains('show')) {
+					dropdowngroup.classList.remove('show');
+				  }
+			  }
+			}
+		</script>
+</body>
+</html>
