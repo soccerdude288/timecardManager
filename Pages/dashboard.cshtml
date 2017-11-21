@@ -6,6 +6,16 @@
 <h2>@ViewData["Title"]</h2>
 <h3>@Model.Message</h3>
 
+@foreach(var i in Model.testList){
+    <p>@i</p>
+}
+
+<h3>List of Timecards!</h3>
+@foreach(var i in Model.timeCardList){
+    <p>@i.timeCardID;</p>
+}
+
+
 <div class="dropdown dashDrop">
   <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Project
   <span class="caret"></span></button>
