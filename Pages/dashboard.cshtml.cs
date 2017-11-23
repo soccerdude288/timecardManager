@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
+using timecardManager.Models;
 
 namespace timecardManager.Pages
 {
@@ -20,6 +22,7 @@ namespace timecardManager.Pages
             testList.Add("test2");
             testList.Add("test3");
             timeCardList = new List<Timecard>();
+            /*
             for (int i = 0; i < 10; i++){
                 Timecard tc = new Timecard();
                 tc.comments.Append("testing + " + i);
@@ -29,6 +32,14 @@ namespace timecardManager.Pages
                 tc.userID = i + 10;
                 timeCardList.Add(tc);
             }
+            */
+            var optionsBuilder = new DbContextOptionsBuilder<ApplicationDbContext>();
+            optionsBuilder.UseSqlite("Data Source=myDatabase.db");
+            using (var db = new ApplicationDbContext(optionsBuilder.Options))
+            {
+                timeCardList = db.Timecards.ToList();
+            }
+
         }
     }
 }
