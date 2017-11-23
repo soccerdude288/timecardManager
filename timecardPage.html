@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 <html>
 		<head>
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -312,6 +322,7 @@
 					var chart = new google.visualization.PieChart(document.getElementById('eachGroupHours_3D'));
 					chart.draw(data, options);
 				}
+								
 			</script>
 			
 			
@@ -320,6 +331,7 @@
 
 		<div class="navbar">
 			<a href="#home">Home</a>
+			
 			
 			<div class="dropdownClass">
 				<button class="dropbtnClass" onclick="dropdownClasses()">Classes
@@ -345,9 +357,8 @@
 				</div>
 			</div> 
 			
-			
-			<div class="dropdownMenu">
-				<button class="dropbtnMenu" onclick="dropdownMenus()">Menu
+			<div class="dropdownMenu">				
+				<button class="dropbtnMenu" data-toggle="dropdown" onclick="dropdownMenus()">Menu
 					<i class="fa fa-caret-down"></i>
 				</button>
 		
@@ -356,7 +367,8 @@
 					<a href="#">Add to Group</a>
 					<a href="#">Create Group</a>
 				</div>
-			</div> 
+			</div>
+			
 		</div>
 		
 		
@@ -426,31 +438,54 @@
 			</tr>
 		</table>
 		
-		<div>
-			<div class="dropdownGroup">
-				<button class="dropbtnGroup" onclick="dropdownGroups()">Menu
-					<i class="fa fa-caret-down"></i>
-				</button>
-		
-				<div class="dropdownGroup-content" id="myDropdownGroup">
-					<a href="#">Group 1</a>
-					<a href="#">Group 2</a>
-					<a href="#">Group 3</a>
-				</div>
-			</div> 
+
+		<div class="input-group-btn" role="group">
+			<button type="button" class="btn btn-secondary dropdown-toggle" id="SelectGroupName" data-toggle="dropdown"  style="background-color:#333;color:#FFF;" > 
+				<span class="selectGroup">Select Group:</span>
+			</button>
+			
+			<div class="dropdown-menu" id="dropdownGroupName" style="background-color:#white;color:#FFF;">
+				<li><a class="dropdown-item" href="#" data-value="item1">Group 1</a></li>
+				<li><a class="dropdown-item" href="#" data-value="item2">Group 2</a></li>
+				<li><a class="dropdown-item" href="#" data-value="item3">Group 3</a></li>
+			</div>
 		</div>
+		
+		<div class="input-class-btn" role="group">
+			<button type="button" class="btn btn-secondary dropdown-toggle" id="SelectClassName" data-toggle="dropdown"  style="background-color:#333;color:#FFF;" > 
+				<span class="selectClass">Select Class:</span>
+			</button>
+			
+			<div class="dropdown-menu" id="dropdownClassName" style="background-color:#white;color:#FFF;">
+				<li><a class="dropdown-item" href="#" data-value="item1">CS 1400</a></li>
+				<li><a class="dropdown-item" href="#" data-value="item2">CS 1410</a></li>
+				<li><a class="dropdown-item" href="#" data-value="item3">CS 3750</a></li>
+			</div>
+		</div>
+                  
 		
 		<div style="width: 1500px;">
 			<div id="differentGroupWork_3D" style="float: left; width: 700px; height: 400px;"></div> 
 			<div id="eachGroupHours_3D" style="float: left; width: 700px; height: 400px"></div>
 			<br style="clear: left;" />
 		</div>
-		
-
 		 
 
 
 		<script>
+		
+			$(function () {
+				$("#dropdownGroupName a").click(function () {
+					$("#SelectGroupName .selectGroup").text($(this).text());
+				});
+			});
+			
+			$(function () {
+				$("#dropdownClassName a").click(function () {
+					$("#SelectClassName .selectClass").text($(this).text());
+				});
+			});
+		
 		
 			// Navigation Bar Dropdown Student
 			function dropdownStud() {
