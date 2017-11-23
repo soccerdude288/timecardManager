@@ -1,14 +1,10 @@
 ﻿<Properties StartupConfiguration="{5EB0D281-0EC6-4187-B2EE-730D161FEBB4}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Startup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Models/ApplicationDbContext.cs">
     <Files>
-      <File FileName="Pages/dashboard.cshtml.cs" Line="17" Column="43" />
-      <File FileName="Pages/dashboard.cshtml" Line="10" Column="10" />
-      <File FileName="Pages/User.cs" Line="19" Column="1" />
-      <File FileName="Pages/Project.cs" Line="15" Column="30" />
-      <File FileName="Pages/Group.cs" Line="14" Column="21" />
-      <File FileName="Pages/Timecard.cs" Line="23" Column="1" />
-      <File FileName="appsettings.json" Line="12" Column="1" />
-      <File FileName="Startup.cs" Line="26" Column="1" />
+      <File FileName="Pages/dashboard.cshtml.cs" Line="29" Column="36" />
+      <File FileName="Pages/dashboard.cshtml" Line="15" Column="16" />
+      <File FileName="Startup.cs" Line="27" Column="79" />
+      <File FileName="Models/ApplicationDbContext.cs" Line="18" Column="10" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
