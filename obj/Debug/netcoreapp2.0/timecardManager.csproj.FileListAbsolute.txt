@@ -19,3 +19,14 @@
 /Users/taylor/Desktop/timecardManager/obj/Debug/netcoreapp2.0/timecardManager.AssemblyInfo.cs
 /Users/taylor/Desktop/timecardManager/obj/Debug/netcoreapp2.0/timecardManager.dll
 /Users/taylor/Desktop/timecardManager/obj/Debug/netcoreapp2.0/timecardManager.pdb
+/Users/pharrett23/Desktop/School/Fall2017/CS3750/timecardManager/bin/Debug/netcoreapp2.0/timecardManager.deps.json
+/Users/pharrett23/Desktop/School/Fall2017/CS3750/timecardManager/bin/Debug/netcoreapp2.0/timecardManager.runtimeconfig.json
+/Users/pharrett23/Desktop/School/Fall2017/CS3750/timecardManager/bin/Debug/netcoreapp2.0/timecardManager.runtimeconfig.dev.json
+/Users/pharrett23/Desktop/School/Fall2017/CS3750/timecardManager/bin/Debug/netcoreapp2.0/timecardManager.dll
+/Users/pharrett23/Desktop/School/Fall2017/CS3750/timecardManager/bin/Debug/netcoreapp2.0/timecardManager.pdb
+/Users/pharrett23/Desktop/School/Fall2017/CS3750/timecardManager/obj/Debug/netcoreapp2.0/timecardManager.csprojResolveAssemblyReference.cache
+/Users/pharrett23/Desktop/School/Fall2017/CS3750/timecardManager/obj/Debug/netcoreapp2.0/timecardManager.csproj.CoreCompileInputs.cache
+/Users/pharrett23/Desktop/School/Fall2017/CS3750/timecardManager/obj/Debug/netcoreapp2.0/timecardManager.AssemblyInfoInputs.cache
+/Users/pharrett23/Desktop/School/Fall2017/CS3750/timecardManager/obj/Debug/netcoreapp2.0/timecardManager.AssemblyInfo.cs
+/Users/pharrett23/Desktop/School/Fall2017/CS3750/timecardManager/obj/Debug/netcoreapp2.0/timecardManager.dll
+/Users/pharrett23/Desktop/School/Fall2017/CS3750/timecardManager/obj/Debug/netcoreapp2.0/timecardManager.pdb

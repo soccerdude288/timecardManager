@@ -1,0 +1,12 @@
+/Users/pharrett23/Desktop/School/Fall2017/CS3750/timecardManager
+--output-path=obj/Debug/netcoreapp2.0/
+--application-name=timecardManager
+--content-root=/Users/pharrett23/Desktop/School/Fall2017/CS3750/timecardManager
+--file=/Users/pharrett23/Desktop/School/Fall2017/CS3750/timecardManager/Pages/About.cshtml
+--file=/Users/pharrett23/Desktop/School/Fall2017/CS3750/timecardManager/Pages/dashboard.cshtml
+--file=/Users/pharrett23/Desktop/School/Fall2017/CS3750/timecardManager/Pages/Error.cshtml
+--file=/Users/pharrett23/Desktop/School/Fall2017/CS3750/timecardManager/Pages/Index.cshtml
+--file=/Users/pharrett23/Desktop/School/Fall2017/CS3750/timecardManager/Pages/_Layout.cshtml
+--file=/Users/pharrett23/Desktop/School/Fall2017/CS3750/timecardManager/Pages/_ValidationScriptsPartial.cshtml
+--file=/Users/pharrett23/Desktop/School/Fall2017/CS3750/timecardManager/Pages/_ViewImports.cshtml
+--file=/Users/pharrett23/Desktop/School/Fall2017/CS3750/timecardManager/Pages/_ViewStart.cshtml
