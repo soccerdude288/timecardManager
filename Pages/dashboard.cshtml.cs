@@ -12,7 +12,7 @@ namespace timecardManager.Pages
     {
         public string Message { get; set; }
         public List<String> testList { get; set; }
-        public List<Timecard> timeCardList { get; set; }
+        public List<timeCard> timeCardList { get; set; }
 
         public void OnGet()
         {
@@ -21,7 +21,7 @@ namespace timecardManager.Pages
             testList.Add("test1");
             testList.Add("test2");
             testList.Add("test3");
-            timeCardList = new List<Timecard>();
+            timeCardList = new List<timeCard>();
             /*
             for (int i = 0; i < 10; i++){
                 Timecard tc = new Timecard();
@@ -33,12 +33,9 @@ namespace timecardManager.Pages
                 timeCardList.Add(tc);
             }
             */
-            var optionsBuilder = new DbContextOptionsBuilder<ApplicationDbContext>();
-            optionsBuilder.UseSqlite("Data Source=myDatabase.db");
-            using (var db = new ApplicationDbContext(optionsBuilder.Options))
-            {
-                timeCardList = db.Timecards.ToList();
-            }
+            DBHelper dbhelp = new DBHelper();
+            timeCardList = dbhelp.getAllUserTimeCard("13");
+
 
         }
     }

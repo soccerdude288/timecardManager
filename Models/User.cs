@@ -1,18 +1,23 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
+
 namespace timecardManager.Pages
 {
     public class User
     {
-        public String name;
-        public String username;
-        public int userID;
-        public bool isAdmin;
-        public int groupID;
+        public String name { get; set; }
+        public String username { get; set; }
+        [Key]
+        public int userID { get; set; }
+        public bool isAdmin { get; set; }
+        public int groupID { get; set; }
 
+        /*
         public User(int userID, String name)
         {
             this.userID = userID;
             this.name = name;
         }
+        */
     }
 }
