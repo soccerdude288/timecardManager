@@ -1,237 +1,22 @@
 <!DOCTYPE html>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+<!-- <!-- Latest compiled and minified CSS -->  	
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
 
-		<!-- Optional theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- <!-- Optional theme --> 
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
 
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- <!-- Latest compiled and minified JavaScript -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
 
 <html>
-		<head>
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-			<style>
-			.navbar {
-				overflow: hidden;
-				background-color: #333;
-				font-family: Arial;
-			}
-
-			.navbar a {
-				float: left;
-				font-size: 16px;
-				color: white;
-				text-align: center;
-				padding: 14px 16px;
-				text-decoration: none;
-			}
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 			
-			
-
-			.dropdownStudent {
-				float: left;
-				overflow: hidden;
-			}
-
-			.dropdownStudent .dropbtnStudent {
-				cursor: pointer;
-				font-size: 16px;    
-				border: none;
-				outline: none;
-				color: white;
-				padding: 14px 16px;
-				background-color: inherit;
-			}
-				
-
-			.navbar a:hover, .dropdownStudent:hover .dropbtnStudent {
-				background-color: red;
-			}
-
-			.dropdownStudent-content {
-				display: none;
-				position: absolute;
-				background-color: #f9f9f9;
-				min-width: 160px;
-				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-				z-index: 1;
-			}
-
-			.dropdownStudent-content a {
-				float: none;
-				color: black;
-				padding: 12px 16px;
-				text-decoration: none;
-				display: block;
-				text-align: left;
-			}
-
-			.dropdownStudent-content a:hover {
-				background-color: #ddd;
-			}
-			
-					.dropdownClass {
-						float: left;
-						overflow: hidden;
-					}
-
-					.dropdownClass .dropbtnClass {
-						cursor: pointer;
-						font-size: 16px;    
-						border: none;
-						outline: none;
-						color: white;
-						padding: 14px 16px;
-						background-color: inherit;
-					}
-						
-
-					.navbar a:hover, .dropdownClass:hover .dropbtnClass {
-						background-color: red;
-					}
-
-					.dropdownClass-content {
-						display: none;
-						position: absolute;
-						background-color: #f9f9f9;
-						min-width: 160px;
-						box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-						z-index: 1;
-					}
-
-					.dropdownClass-content a {
-						float: none;
-						color: black;
-						padding: 12px 16px;
-						text-decoration: none;
-						display: block;
-						text-align: left;
-					}
-
-					.dropdownClass-content a:hover {
-						background-color: #ddd;
-					}
-					
-							.dropdownMenu {
-								float: right;
-								overflow: hidden;
-							}
-
-							.dropdownMenu .dropbtnMenu {
-								cursor: pointer;
-								font-size: 16px;    
-								border: none;
-								outline: none;
-								color: white;
-								padding: 14px 16px;
-								background-color: inherit;
-							}
-								
-
-							.navbar a:hover, .dropdownMenu:hover .dropbtnMenu {
-								background-color: red;
-							}
-
-							.dropdownMenu-content {
-								display: none;
-								position: absolute;
-								background-color: #f9f9f9;
-								min-width: 250px;
-								box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-								z-index: 1;
-							}
-
-							.dropdownMenu-content a {
-								float: none;
-								color: black;
-								padding: 12px 16px;
-								text-decoration: none;
-								display: block;
-								text-align: left;
-							}
-
-							.dropdownMenu-content a:hover {
-								background-color: #ddd;
-							}
-											
-											.groupbar {
-												overflow: hidden;
-												background-color: #333;
-												font-family: Arial;
-											}
-
-											.groupbar a {
-												float: left;
-												font-size: 16px;
-												color: white;
-												text-align: center;
-												padding: 14px 16px;
-												text-decoration: none;
-											}
-											
-											.dropdownGroup {
-												float: left;
-												overflow: hidden;
-											}
-
-											.dropdownGroup .dropbtnGroup {
-												cursor: pointer;
-												font-size: 16px;    
-												border: none;
-												outline: none;
-												color: white;
-												padding: 14px 16px;
-												background-color: inherit;
-											}
-											
-											.groupbar a:hover, .dropdownGroup:hover .dropbtnGroup {
-												background-color: red;
-											}
-
-											.dropdownGroup-content {
-												display: none;
-												position: absolute;
-												background-color: #f9f9f9;
-												min-width: 250px;
-												box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-												z-index: 1;
-											}
-
-											.dropdownGroup-content a {
-												float: none;
-												color: black;
-												padding: 12px 16px;
-												text-decoration: none;
-												display: block;
-												text-align: left;
-											}
-
-											.dropdownGroup-content a:hover {
-												background-color: #ddd;
-											}
-
-			.show {
-				display: block;
-			}
-			
-							table {
-								font-family: arial, sans-serif;
-								border-collapse: collapse;
-								width: 100%;
-							}
-
-							td, th {
-								border: 1px solid #dddddd;
-								text-align: left;
-								padding: 8px;
-							}
-
-							tr:nth-child(even) {
-								background-color: #dddddd;
-							}
-			</style>
 			
 			<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 			<script type="text/javascript">
@@ -326,52 +111,62 @@
 			</script>
 			
 			
-		</head>
+	</head>
+		
+		
 <body>
 
-		<div class="navbar">
-			<a href="#home">Home</a>
-			
-			
-			<div class="dropdownClass">
-				<button class="dropbtnClass" onclick="dropdownClasses()">Classes
-					<i class="fa fa-caret-down"></i>
-				</button>
-		
-				<div class="dropdownClass-content" id="myDropdownClass">
-					<a href="#">Link 1</a>
-					<a href="#">Link 2</a>
-					<a href="#">Link 3</a>
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Timecard Manager</a>
 				</div>
-			</div> 
-		  
-			<div class="dropdownStudent">
-				<button class="dropbtnStudent" onclick="dropdownStud()">Students
-					<i class="fa fa-caret-down"></i>
-				</button>
-		
-				<div class="dropdownStudent-content" id="myDropdownStudent">
-					<a href="#">Link 1</a>
-					<a href="#">Link 2</a>
-					<a href="#">Link 3</a>
-				</div>
-			</div> 
-			
-			<div class="dropdownMenu">				
-				<button class="dropbtnMenu" data-toggle="dropdown" onclick="dropdownMenus()">Menu
-					<i class="fa fa-caret-down"></i>
-				</button>
-		
-				<div class="dropdownMenu-content" id="myDropdownMenu">
-					<a href="#">Profile</a>
-					<a href="#">Add to Group</a>
-					<a href="#">Create Group</a>
-				</div>
+				
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					
+					<!-- Drop down Class -->
+					<li class="dropdown active span8"> 
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span id="dropdown_class">Select Class </span><span class="glyphicon glyphicon-chevron-down"></span></a>
+						<ul class="dropdown-menu" id="classNames">
+							<li><a>CS 1400</a></li>
+							<li><a>CS 1410</a></li>
+							<li><a>CS 3750</a></li>
+						</ul>
+					</li>
+					</li>
+					
+					<!-- Drop down Student -->
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span id="dropdown_student">Select Student </span><span class="glyphicon glyphicon-chevron-down"></span></a>
+						<ul class="dropdown-menu" id = "studentNames">
+							<li><a href="#">Curtis Hart</a></li>
+							<li><a href="#">Garrett Barker</a></li>
+							<li><a href="#">Taylor Earl</a></li>
+						</ul>
+					</li>
+					
+				</ul>
+				
+				
+				<!-- Drop down Menu right aligned  -->
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu <span class="glyphicon glyphicon-chevron-down"></span></a>
+						<ul class="dropdown-menu" id="menu">
+							<li><a href="#">Profile </a></li>
+							<li><a href="#">Add to Group</a></li>
+							<li><a href="#">Create Group</a></li>
+							<li><a href="#">Logout</a></li>
+						</ul>
+					</li>
+				</ul>
+				
 			</div>
-			
-		</div>
+		</nav>
+
 		
-		
+	
+
+		<div style="display: block">
 		<form>
 			<fieldset>
 				<label>Group Name:</label>
@@ -388,6 +183,7 @@
 				<input id="stopTime" type="submit" value="Stop">
 			 </fieldset>
 		</form>
+		</div>
 		
 		<div style="width: 1500px;">
 			<div id="barchart_class" style="float: left; width: 700px; height: 400px"></div>
@@ -439,29 +235,7 @@
 		</table>
 		
 
-		<div class="input-group-btn" role="group">
-			<button type="button" class="btn btn-secondary dropdown-toggle" id="SelectGroupName" data-toggle="dropdown"  style="background-color:#333;color:#FFF;" > 
-				<span class="selectGroup">Select Group:</span>
-			</button>
-			
-			<div class="dropdown-menu" id="dropdownGroupName" style="background-color:#white;color:#FFF;">
-				<li><a class="dropdown-item" href="#" data-value="item1">Group 1</a></li>
-				<li><a class="dropdown-item" href="#" data-value="item2">Group 2</a></li>
-				<li><a class="dropdown-item" href="#" data-value="item3">Group 3</a></li>
-			</div>
-		</div>
-		
-		<div class="input-class-btn" role="group">
-			<button type="button" class="btn btn-secondary dropdown-toggle" id="SelectClassName" data-toggle="dropdown"  style="background-color:#333;color:#FFF;" > 
-				<span class="selectClass">Select Class:</span>
-			</button>
-			
-			<div class="dropdown-menu" id="dropdownClassName" style="background-color:#white;color:#FFF;">
-				<li><a class="dropdown-item" href="#" data-value="item1">CS 1400</a></li>
-				<li><a class="dropdown-item" href="#" data-value="item2">CS 1410</a></li>
-				<li><a class="dropdown-item" href="#" data-value="item3">CS 3750</a></li>
-			</div>
-		</div>
+
                   
 		
 		<div style="width: 1500px;">
@@ -470,67 +244,23 @@
 			<br style="clear: left;" />
 		</div>
 		 
+			<script type="text/javascript">
 
+			</script>
 
 		<script>
 		
-			$(function () {
-				$("#dropdownGroupName a").click(function () {
-					$("#SelectGroupName .selectGroup").text($(this).text());
-				});
-			});
 			
-			$(function () {
-				$("#dropdownClassName a").click(function () {
-					$("#SelectClassName .selectClass").text($(this).text());
-				});
-			});
-		
-		
-			// Navigation Bar Dropdown Student
-			function dropdownStud() {
-				document.getElementById("myDropdownStudent").classList.toggle("show");
-			}
+				$('.dropdown-toggle').dropdown();
+				$('#classNames li').on('click', function() {
+					$('#dropdown_class').html($(this).find('a').html());
+				})
+				
+				$('.dropdown-toggle').dropdown();
+				$('#studentNames li').on('click', function() {
+					$('#dropdown_student').html($(this).find('a').html());
+				})
 
-			// Student Dropdown Onclick
-			window.onclick = function(e) {
-			  if (!e.target.matches('.dropbtnStudent')) {
-				var dropdownStudents = document.getElementById("myDropdownStudent");
-				  if (dropdownStudents.classList.contains('show')) {
-					dropdownStudents.classList.remove('show');
-				  }
-			  }
-			}
-			
-			// Navigation Bar Dropdown Classes
-			function dropdownClasses() {
-				document.getElementById("myDropdownClass").classList.toggle("show");
-			}
-
-			// Classes Dropdown Onclick
-			window.onclick = function(e) {
-			  if (!e.target.matches('.dropbtnClass')) {
-				var dropdownclass = document.getElementById("myDropdownClass");
-				  if (dropdownclass.classList.contains('show')) {
-					dropdownclass.classList.remove('show');
-				  }
-			  }
-			}
-			
-			// Navigation Bar Dropdown Menu
-			function dropdownMenus() {
-				document.getElementById("myDropdownMenu").classList.toggle("show");
-			}
-
-			// Menu Dropdown Onclick
-			window.onclick = function(e) {
-			  if (!e.target.matches('.dropbtnMenu')) {
-				var dropdownmenu = document.getElementById("myDropdownMenu");
-				  if (dropdownmenu.classList.contains('show')) {
-					dropdownmenu.classList.remove('show');
-				  }
-			  }
-			}
 			
 			// Current Time Function
 			var dt = new Date();
@@ -538,20 +268,20 @@
 			document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
 			
 			
-			// Group Dropdown
-			function dropdownGroups() {
-				document.getElementById("myDropdownGroup").classList.toggle("show");
-			}
+			<!-- // Group Dropdown -->
+			<!-- function dropdownGroups() { -->
+				<!-- document.getElementById("myDropdownGroup").classList.toggle("show"); -->
+			<!-- } -->
 
-			// Group Dropdown Onclick
-			window.onclick = function(e) {
-			  if (!e.target.matches('.dropbtnGroup')) {
-				var dropdowngroup = document.getElementById("myDropdownGroup");
-				  if (dropdowngroup.classList.contains('show')) {
-					dropdowngroup.classList.remove('show');
-				  }
-			  }
-			}
+			<!-- // Group Dropdown Onclick -->
+			<!-- window.onclick = function(e) { -->
+			  <!-- if (!e.target.matches('.dropbtnGroup')) { -->
+				<!-- var dropdowngroup = document.getElementById("myDropdownGroup"); -->
+				  <!-- if (dropdowngroup.classList.contains('show')) { -->
+					<!-- dropdowngroup.classList.remove('show'); -->
+				  <!-- } -->
+			  <!-- } -->
+			<!-- } -->
 		</script>
 </body>
 </html>
