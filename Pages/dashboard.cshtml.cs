@@ -13,6 +13,9 @@ namespace timecardManager.Pages
         public string Message { get; set; }
         public List<String> testList { get; set; }
         public List<timeCard> timeCardList { get; set; }
+        public List<Project> allProjects { get; set; }
+        public List<Group> projectGroups { get; set; }
+        public List<User> groupUsers { get; set; }
 
         public void OnGet()
         {
@@ -34,7 +37,15 @@ namespace timecardManager.Pages
             }
             */
             DBHelper dbhelp = new DBHelper();
+            timeCard tc = new timeCard();
+            tc.comments = "testing";
+            tc.stopTime = "11/17/17";
+            tc.startTime = "11/16/17";
+            tc.timeCardID = 111111;
+            tc.userID = 13;
+            dbhelp.insertTimeCard(tc);
             timeCardList = dbhelp.getAllUserTimeCard("13");
+            allProjects = dbhelp.getAllProject();
 
 
         }

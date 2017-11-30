@@ -8,7 +8,7 @@ namespace timecardManager.Pages
         public String name { get; set; }
         [Key]
         public int projectID { get; set; }
-        public bool isActive { get; set; }
+        public int activeStatus { get; set; }
 
         /*
         public Project()

@@ -121,14 +121,25 @@
                     
                     <!-- Drop down Class -->
                     <li class="dropdown active span8"> 
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span id="dropdown_class">Select Class </span><span class="glyphicon glyphicon-chevron-down"></span></a>
-                        <ul class="dropdown-menu" id="classNames">
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span id="dropdown_class">Select Project </span><span class="glyphicon glyphicon-chevron-down"></span></a>
+                        <ul class="dropdown-menu" id="projectNames">
+					        @foreach(var i in Model.allProjects){
+                                <li><a>@i.name</a></li>
+                            }
                             <li><a>CS 1400</a></li>
                             <li><a>CS 1410</a></li>
                             <li><a>CS 3750</a></li>
                         </ul>
                     </li>
+
+			<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span id="dropdown_class">Select Group </span><span class="glyphicon glyphicon-chevron-down"></span></a>
+                        <ul class="dropdown-menu" id="groupNames">
+                            <li><a>CS 1400</a></li>
+                            <li><a>CS 1410</a></li>
+                            <li><a>CS 3750</a></li>
+                        </ul>
                     </li>
+
                     
                     <!-- Drop down Student -->
                     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span id="dropdown_student">Select Student </span><span class="glyphicon glyphicon-chevron-down"></span></a>
