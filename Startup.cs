@@ -25,6 +25,15 @@ namespace timecardManager
         {
             services.AddMvc();
             //services.AddDbContext<ApplicationDbContext>(options=> options.UseSqlite(Configuration.GetConnectionString("Sqlite")));
+
+            // Adds a default in-memory implementation of IDistributedCache.
+            services.AddDistributedMemoryCache();
+
+            services.AddSession(options =>
+            {
+                options.Cookie.Name = ".TimeCardManager.Session";
+                options.IdleTimeout = TimeSpan.FromHours(10);
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

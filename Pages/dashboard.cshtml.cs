@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using timecardManager.Models;
@@ -10,6 +11,14 @@ namespace timecardManager.Pages
 {
     public class ContactModel : PageModel
     {
+        const string SessionUserID = "_User";
+        const string SessionProjectID = "_Project";
+        const string SessionGroupID = "_Group";
+        const string SessionTimeCardID = "_TimeCard";
+
+
+
+
         public string Message { get; set; }
         public List<String> testList { get; set; }
         public List<timeCard> timeCardList { get; set; }
@@ -19,6 +28,17 @@ namespace timecardManager.Pages
 
         public void OnGet()
         {
+
+            var sUserID = HttpContext.Session.GetString(SessionUserID);
+            var sProjectID = HttpContext.Session.GetString(SessionProjectID);
+            var sGroupID = HttpContext.Session.GetString(SessionGroupID);
+            var sTimeCardID = HttpContext.Session.GetString(SessionTimeCardID);
+
+
+
+
+
+
             Message = "Your contact page.";
             testList = new List<string>();
             testList.Add("test1");

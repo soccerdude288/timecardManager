@@ -10,7 +10,9 @@ namespace timecardManager.Pages
         [Key]
         public int userID { get; set; }
         public bool isAdmin { get; set; }
-        public int groupID { get; set; }
+
+        //In a different class
+        //public int groupID { get; set; }
 
         /*
         public User(int userID, String name)

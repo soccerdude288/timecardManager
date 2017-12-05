@@ -52,6 +52,17 @@ namespace timecardManager.Models
             }
         }
 
+
+        public List<Group> getProjectGroups(String projectID)
+        {
+            using (var db = new ApplicationDbContext(optionsBuilder.Options))
+            {
+                List<Group> groupList = new List<Group>();
+                groupList = db.Groups.FromSql("SELECT * FROM Group WHERE ProjectID = {0}", projectID).ToList();
+                return groupList;
+            }
+        }
+
         public int insertUser(User u){
             using (var db = new ApplicationDbContext(optionsBuilder.Options))
             {
