@@ -127,14 +127,27 @@
 					
 					<!-- Drop down Class -->
 					<li class="dropdown active span8"> 
-					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span id="dropdown_class">Select Class </span><span class="glyphicon glyphicon-chevron-down"></span></a>
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span id="dropdown_class">Select Project </span><span class="glyphicon glyphicon-chevron-down"></span></a>
 						<ul class="dropdown-menu" id="classNames">
+							<!-- @foreach(var i in Model.allProjects){ -->
+                                <!-- <li><a>@i.name</a></li> -->
+                            <!-- } -->
 							<li><a>CS 1400 </a></li>
-							<li><a>CS 1410 </a></li>
-							<li><a>CS 3750 </a></li>
 						</ul>
 					</li>
 					</li>
+					
+				
+					
+					<!-- Drop down Group -->
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span id="dropdown_group">Select Group </span><span class="glyphicon glyphicon-chevron-down"></span></a>
+						<ul class="dropdown-menu" id="groupNames">
+							<li><a href="#">Group 1 </a></li>
+							<li><a href="#">Group 2 </a></li>
+							<li><a href="#">Group 3 </a></li>
+						</ul>
+					</li>
+					
 					
 					<!-- Drop down Student -->
 					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span id="dropdown_student">Select Student </span><span class="glyphicon glyphicon-chevron-down"></span></a>
@@ -380,24 +393,16 @@
 				<div class="form-group">
 					  <label class="control-label col-sm-2">Current Time:</label>
 					  
-					  <div class="col-sm-10" id="loadtime">    
+					  <div class="col-sm-10">    
 							<label id="date"></label>
 							<label id="datetime"></label><br>
 					  </div>
 				</div>
 				
-				<div class="form-group">
-					  <label class="control-label col-sm-2">Total Running Time:</label>
-					  
-					  <div class="col-sm-10">          
-							<label id="runningTime"></label><br>
-					  </div>
-				</div>
-				
 				<div class="form-group">        
-					<div class="col-sm-offset-2 col-sm-10">
-						<button id="startTime" type="submit" class="btn btn-default">Start</button>
-						<button id="stopTime" type="submit" class="btn btn-default">Stop</button>
+					<div class="col-sm-offset-2 col-sm-10" id="start">
+						<button id="startTime" type="button" class="btn btn-default">Start</button>
+						<button id="stopTime" type="button" class="btn btn-default">Stop</button>
 					</div>
 				</div>
 				
@@ -459,19 +464,7 @@
 			</tr>
 		</table>
 		
-	
 
-
-		<div class="dropdown">
-			<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
-				<span id="dropdown_group">Select Group </span><span class="glyphicon glyphicon-chevron-down"></span></button>
-				
-				<ul class="dropdown-menu" id="groupNames">
-					<li><a href="#">Group 1 </a></li>
-					<li><a href="#">Group 2 </a></li>
-					<li><a href="#">Group 3 </a></li>
-				</ul>
-		</div>
 		
 		
 		
@@ -484,7 +477,7 @@
 		</div>
 		 
 
-		<script>
+		<script type="text/javascript">
 		
 			// Select Class From Dropdown			
 			$('.dropdown-toggle').dropdown();
@@ -529,12 +522,38 @@
 			})
 
 			
-			function getTime() {
-				// Current Time Function
-				var dt = new Date();
-				document.getElementById("date").innerHTML = dt.toLocaleDateString();
-				document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
-			}
+			$(
+				function(){
+				 
+					$('#startTime').click(function(){
+							//e.preventDefault();
+							
+							var dt = new Date();
+							document.getElementById("date").innerHTML = dt.toLocaleDateString();
+							document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();	
+							
+							$('#startTime').hide();
+							$('#stopTime').show();						  
+					});
+					
+				}
+			);
+			
+			
+			$(
+				function(){
+				 
+					$('#stopTime').click(function(){
+					
+							var dt = new Date();
+							document.getElementById("date").innerHTML = ""
+							document.getElementById("datetime").innerHTML = ""
+							$('#stopTime').hide();
+							$('#startTime').show();		  
+					});
+					
+				}
+			);
 			
 		</script>
 </body>
