@@ -28718,9 +28718,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/taylor/Desktop/timecardManager/timecardManager.csproj",
-      "projectName": "timecardManager",
-      "projectPath": "/Users/taylor/Desktop/timecardManager/timecardManager.csproj",
+      "projectUniqueName": "/Users/taylor/Desktop/timecardManager/root.csproj",
+      "projectName": "root",
+      "projectPath": "/Users/taylor/Desktop/timecardManager/root.csproj",
       "packagesPath": "/Users/taylor/.nuget/packages/",
       "outputPath": "/Users/taylor/Desktop/timecardManager/obj",
       "projectStyle": "PackageReference",

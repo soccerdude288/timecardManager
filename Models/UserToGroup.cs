@@ -3,7 +3,8 @@ namespace timecardManager.Models
 {
     public class UserToGroup
     {
-        public string name { get; set; }
-
+        public String userToGroupID { get; set; }
+        public String userID { get; set; }
+        public String groupID { get; set; }
     }
 }

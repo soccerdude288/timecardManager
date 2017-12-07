@@ -29,10 +29,10 @@ namespace timecardManager.Pages
         public void OnGet()
         {
 
-            var sUserID = HttpContext.Session.GetString(SessionUserID);
-            var sProjectID = HttpContext.Session.GetString(SessionProjectID);
-            var sGroupID = HttpContext.Session.GetString(SessionGroupID);
-            var sTimeCardID = HttpContext.Session.GetString(SessionTimeCardID);
+            //var sUserID = HttpContext.Session.GetString(SessionUserID);
+            //var sProjectID = HttpContext.Session.GetString(SessionProjectID);
+            //var sGroupID = HttpContext.Session.GetString(SessionGroupID);
+            //var sTimeCardID = HttpContext.Session.GetString(SessionTimeCardID);
 
 
 
@@ -67,6 +67,17 @@ namespace timecardManager.Pages
             timeCardList = dbhelp.getAllUserTimeCard("13");
             allProjects = dbhelp.getAllProject();
 
+
+            /*
+             * 
+             * @saveUser = function(){
+                @Model.newUser.name = fullName;
+                @Model.newUser.username = username;
+                @Model.newUser.password = password
+                @Model.newUser.isAdmin = 0;
+                @Model.dbhelper.insertUser(user);
+            }
+            */
 
         }
     }

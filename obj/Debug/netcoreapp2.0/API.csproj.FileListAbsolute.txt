@@ -1,0 +1,10 @@
+/Users/taylor/Desktop/timecardManager/bin/Debug/netcoreapp2.0/API.deps.json
+/Users/taylor/Desktop/timecardManager/bin/Debug/netcoreapp2.0/API.runtimeconfig.json
+/Users/taylor/Desktop/timecardManager/bin/Debug/netcoreapp2.0/API.runtimeconfig.dev.json
+/Users/taylor/Desktop/timecardManager/bin/Debug/netcoreapp2.0/API.dll
+/Users/taylor/Desktop/timecardManager/bin/Debug/netcoreapp2.0/API.pdb
+/Users/taylor/Desktop/timecardManager/obj/Debug/netcoreapp2.0/API.csproj.CoreCompileInputs.cache
+/Users/taylor/Desktop/timecardManager/obj/Debug/netcoreapp2.0/API.AssemblyInfoInputs.cache
+/Users/taylor/Desktop/timecardManager/obj/Debug/netcoreapp2.0/API.AssemblyInfo.cs
+/Users/taylor/Desktop/timecardManager/obj/Debug/netcoreapp2.0/API.dll
+/Users/taylor/Desktop/timecardManager/obj/Debug/netcoreapp2.0/API.pdb

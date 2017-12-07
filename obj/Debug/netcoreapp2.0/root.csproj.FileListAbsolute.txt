@@ -1,0 +1,10 @@
+/Users/taylor/Desktop/timecardManager/bin/Debug/netcoreapp2.0/root.deps.json
+/Users/taylor/Desktop/timecardManager/bin/Debug/netcoreapp2.0/root.runtimeconfig.json
+/Users/taylor/Desktop/timecardManager/bin/Debug/netcoreapp2.0/root.runtimeconfig.dev.json
+/Users/taylor/Desktop/timecardManager/bin/Debug/netcoreapp2.0/root.dll
+/Users/taylor/Desktop/timecardManager/bin/Debug/netcoreapp2.0/root.pdb
+/Users/taylor/Desktop/timecardManager/obj/Debug/netcoreapp2.0/root.csproj.CoreCompileInputs.cache
+/Users/taylor/Desktop/timecardManager/obj/Debug/netcoreapp2.0/root.AssemblyInfoInputs.cache
+/Users/taylor/Desktop/timecardManager/obj/Debug/netcoreapp2.0/root.AssemblyInfo.cs
+/Users/taylor/Desktop/timecardManager/obj/Debug/netcoreapp2.0/root.dll
+/Users/taylor/Desktop/timecardManager/obj/Debug/netcoreapp2.0/root.pdb
