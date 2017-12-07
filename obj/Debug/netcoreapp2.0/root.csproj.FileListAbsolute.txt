@@ -8,3 +8,4 @@
 /Users/taylor/Desktop/timecardManager/obj/Debug/netcoreapp2.0/root.AssemblyInfo.cs
 /Users/taylor/Desktop/timecardManager/obj/Debug/netcoreapp2.0/root.dll
 /Users/taylor/Desktop/timecardManager/obj/Debug/netcoreapp2.0/root.pdb
+/Users/taylor/Desktop/timecardManager/obj/Debug/netcoreapp2.0/root.csprojResolveAssemblyReference.cache

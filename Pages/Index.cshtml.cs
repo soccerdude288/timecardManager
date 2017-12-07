@@ -11,11 +11,14 @@ namespace timecardManager.Pages
     public class IndexModel : PageModel
     {
         
+        public DBHelper dbhelper { get; set; }
+        public User newUser { get; set; }
 
         public void OnGet()
         {
-            DBHelper dbhelper = new DBHelper();
-            User newUser = new User();
+            dbhelper = new DBHelper();
+            newUser = new User();
+
         }
     }
 }

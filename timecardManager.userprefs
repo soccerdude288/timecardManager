@@ -1,23 +1,25 @@
 ﻿<Properties StartupConfiguration="{5EB0D281-0EC6-4187-B2EE-730D161FEBB4}|Default">
   <MonoDevelop.Ide.ItemProperties.root PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/Index.cshtml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Models/ApplicationDbContext.cs">
     <Files>
-      <File FileName="Pages/dashboard.cshtml.cs" Line="35" Column="15" />
-      <File FileName="Pages/dashboard.cshtml" Line="101" Column="19" />
-      <File FileName="Pages/Index.cshtml" Line="23" Column="10" />
+      <File FileName="Pages/dashboard.cshtml.cs" Line="29" Column="23" />
+      <File FileName="Pages/dashboard.cshtml" Line="2" Column="20" />
+      <File FileName="Pages/Index.cshtml.cs" Line="16" Column="9" />
+      <File FileName="Pages/Index.cshtml" Line="12" Column="56" />
       <File FileName="logInPage.html" Line="4" Column="1" />
       <File FileName="Pages/_Layout.cshtml" Line="12" Column="5" />
       <File FileName="API/ValuesController.cs" Line="14" Column="27" />
-      <File FileName="API/UsersController.cs" Line="26" Column="10" />
-      <File FileName="Models/DBHelper.cs" Line="66" Column="30" />
-      <File FileName="Models/User.cs" Line="8" Column="41" />
-      <File FileName="Pages/Index.cshtml.cs" Line="12" Column="9" />
+      <File FileName="API/UsersController.cs" Line="14" Column="9" />
+      <File FileName="Models/DBHelper.cs" Line="67" Column="1" />
+      <File FileName="Models/User.cs" Line="13" Column="45" />
+      <File FileName="Models/ApplicationDbContext.cs" Line="25" Column="46" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/taylor/Desktop/timecardManager/API/UsersController.cs" relfile="API/UsersController.cs" line="33" column="1" />
+      <Breakpoint file="/Users/taylor/Desktop/timecardManager/API/UsersController.cs" relfile="API/UsersController.cs" line="32" column="13" />
+      <Breakpoint file="/Users/taylor/Desktop/timecardManager/Models/DBHelper.cs" relfile="Models/DBHelper.cs" line="67" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

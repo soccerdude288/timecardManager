@@ -66,7 +66,7 @@ namespace timecardManager.Models
         public int insertUser(User u){
             using (var db = new ApplicationDbContext(optionsBuilder.Options))
             {
-                db.Users.Add(u);
+                db.User.Add(u);
                 return db.SaveChanges();
             }
         }

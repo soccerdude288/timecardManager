@@ -6,7 +6,8 @@
         <script type="text/javascript">
             $("#submit").click(function() {
                 var item = SHA256($("#username").val() + ":" + $("#password").val());
-            $("#password").val(item);
+                $("#password").val(item);
+
             });
 
             $("#createUser").click(function() {
@@ -20,6 +21,10 @@
 	            $("#createUserPassword").attr('data-bind', value: password, valueUpdate: "afterkeydown");
 	            $("#createUser").attr('data-bind', 'submit: saveUser:');
             });
+
+	            @Model.newUser.name = fullName;
+                @Model.newUser.username = $("#createUserUserName").val();
+                @Model.dbhelper.insertUser(Model.newUser);
 
 
 	           

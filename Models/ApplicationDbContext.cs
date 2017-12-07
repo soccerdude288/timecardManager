@@ -22,7 +22,7 @@ namespace timecardManager.Models
 
     public class ApplicationDbContext : DbContext
     {
-        public DbSet<User> Users { get; set; }
+        public DbSet<User> User { get; set; }
         public DbSet<Project> Projects { get; set; }
         public DbSet<Group> Groups { get; set; }
         public DbSet<timeCard> Timecards { get; set; }
