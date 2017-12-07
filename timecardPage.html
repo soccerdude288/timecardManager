@@ -22,6 +22,7 @@
 			<script type="text/javascript">
 				google.charts.load("current", {packages:["corechart"]});
 				
+				
 				google.charts.setOnLoadCallback(drawGroupPie);
 				function drawGroupPie() {
 					var data = google.visualization.arrayToDataTable([
@@ -32,7 +33,7 @@
 					]);
 
 					var options = {
-					  title: 'Group Total Hours Worked Per Person',
+					  title: 'Your Groups Total Hours Worked Per Person',
 					  is3D: true,
 					};
 
@@ -60,9 +61,9 @@
 									   2]);
 
 					var options = {
-						title: "Class Hours Worked Comparison",
-						width: 600,
-						height: 400,
+						title: "Class Hours Worked Comparison", 
+						<!-- width: 325, -->
+						<!-- height: 325, -->
 						bar: {groupWidth: "95%"},
 						legend: { position: "none" },
 					};
@@ -107,6 +108,37 @@
 					var chart = new google.visualization.PieChart(document.getElementById('eachGroupHours_3D'));
 					chart.draw(data, options);
 				}
+				
+
+				      google.charts.load('current', {'packages':['table']});
+					  google.charts.setOnLoadCallback(drawTable);
+
+					  function drawTable() {
+						var data = new google.visualization.DataTable();
+						
+						
+						data.addColumn('datetime', 'Start Time');
+						data.addColumn('datetime', 'Stop Time');
+						data.addColumn('number', 'Total Hours');
+						data.addColumn('string', 'Group Name');
+						data.addColumn('string', 'Comments');
+						data.addColumn('datetime', 'Modified Date');
+						data.addColumn('string', '');
+							
+						
+						
+						data.addRows([
+						
+							// year, month, day, hour, minutes
+							[ new Date(2017, 11, 6, 19, 30), new Date(2017, 11, 6, 21, 30), {v: 2.00}, 'Group 1', '', new Date(2017, 11, 6, 21, 30), '<a data-toggle="modal" data-target="#modalEditTable">Edit</a>'],
+							[ new Date(2017, 11, 7, 19, 30), new Date(2017, 11, 6, 23, 30), {v: 4.00}, 'Group 1', 'Changed Stop Time from 12/7/2017 10:41:42 PM to 12/7/2017 11:41:42 PM', new Date(2017, 11, 6, 23, 30), '<a data-toggle="modal" data-target="#modalEditTable">Edit</a>']
+						
+						]);
+
+						var table = new google.visualization.Table(document.getElementById('table_div'));
+
+						table.draw(data, {showRowNumber: true, width: '100%', height: '100%', allowHtml: true});
+					  }
 								
 			</script>
 			
@@ -373,9 +405,43 @@
 						</div>
 					</div>
 					
+					
+					<!-- Edit Table Modal -->
+					<div class="modal fade" id="modalEditTable" role="dialog">
+						<div class="modal-dialog">
+						
+						  <!-- Modal content-->
+						  <div class="modal-content">
+						  
+							<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">Profile</h4>
+							</div>
+							
+							
+							<div class="form-group col-xs-12">
+									<label for="fullname-name" class="form-control-label">Full Name:</label>
+									<input type="text" class="form-control" id="fullname-name">
+							</div>
+							
+							
+							<div class="form-group col-xs-12">
+									<label for="username-name" class="form-control-label">Username:</label>
+									<input type="text" class="form-control" id="username-name">
+							</div>
+							
+		  
+							<div class="modal-footer">
+								    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							</div>
+							
+						  </div>
+						</div>
+					</div>
+					
 		
 		
-		
+
 	
 	
 		<div class="container">
@@ -409,72 +475,22 @@
 			</form>
 		</div>
 		
-		
-		
-		
 		<div style="width: 1500px;">
-			<div id="barchart_class" style="float: left; width: 700px; height: 400px"></div>
-			<div id="groupWork_3D" style="float: left; width: 700px; height: 400px;"></div> 	
+			
+			<div id="groupWork_3D" style="float: left; width: 25%; height: 250px;"></div> 	
+			<div id="barchart_class" style="float: left; width: 25%; height: 250px;"></div>
+			
+			<div id="differentGroupWork_3D" style="float: left; width: 25%; height: 250px;"></div> 
+			<div id="eachGroupHours_3D" style="float: left; width: 25%; height: 250px;"></div>
 			<br style="clear: left;" />
+			<div id="table_div"></div>
 		</div>
-		
-		
-		
-		
-		
-		<table>
-			<tr>
-				<th>Start Time</th>
-				<th>Stop Time</th>
-				<th>Total Time</th>
-				<th>Group Name</th>
-				<th>Comments</th>
-				<th>Modified Date</th>
-				<th></th>
-			</tr>
-			<tr>
-				<td>11/15/2017 5:00pm</td>
-				<td>11/15/2017 8:00pm</td>
-				<td>3.00</td>
-				<td>Group 1</td>
-				<td>Worked on Nav Bar</td>
-				<td>11/15/2017 8:00pm</td>
-				<td>
-					<a href="http://google.com">
-						<div style="height:100%;width:100%">
-						  Edit
-						</div>
-					</a>
-				</td>
-			</tr>
-			<tr>
-				<td>11/16/2017 5:00pm</td>
-				<td>11/16/2017 8:00pm</td>
-				<td>3.00</td>
-				<td>Group 3</td>
-				<td>Worked on Database</td>
-				<td>11/15/2017 8:00pm</td>
-				<td>
-					<a href="http://google.com">
-						<div style="height:100%;width:100%">
-						  Edit
-						</div>
-					</a>
-				</td>
-			</tr>
-		</table>
-		
 
 		
+	
 		
 		
-		
-		
-		<div style="width: 1500px;">
-			<div id="differentGroupWork_3D" style="float: left; width: 700px; height: 400px;"></div> 
-			<div id="eachGroupHours_3D" style="float: left; width: 700px; height: 400px"></div>
-			<br style="clear: left;" />
-		</div>
+
 		 
 
 		<script type="text/javascript">
